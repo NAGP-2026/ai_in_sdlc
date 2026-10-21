@@ -1,0 +1,22 @@
+*, *::before, *::after { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 0; background: #f5f5f5; color: #222; }
+header { background: #1a56db; color: white; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+h1 { margin: 0; font-size: 1.4rem; }
+main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+form { background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; display: flex; flex-direction: column; gap: .75rem; }
+label { font-weight: 600; font-size: .9rem; }
+input { padding: .5rem .75rem; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; }
+button { padding: .5rem 1rem; border: none; border-radius: 4px; cursor: pointer; font-size: .9rem; background: #1a56db; color: white; }
+button.danger { background: #dc2626; }
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; }
+th, td { padding: .75rem 1rem; text-align: left; border-bottom: 1px solid #e5e7eb; font-size: .9rem; }
+th { background: #f9fafb; font-weight: 600; }
+ul#pending-list { list-style: none; padding: 0; }
+ul#pending-list li { background: white; border-radius: 8px; padding: 1rem; margin-bottom: .75rem; display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+[role="alert"] { color: #dc2626; font-weight: 500; }
+[role="tablist"] { display: flex; gap: .5rem; margin-bottom: 1rem; }
+[role="tab"] { background: white; color: #374151; border: 1px solid #d1d5db; }
+[role="tab"][aria-selected="true"] { background: #1a56db; color: white; border-color: #1a56db; }
+.status-APPROVED { color: #059669; font-weight: 600; }
+.status-REJECTED { color: #dc2626; font-weight: 600; }
+.status-PENDING_APPROVAL { color: #d97706; font-weight: 600; }
